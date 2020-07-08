@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_poster"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@id/img_poster"
+        android:text="@string/name"
+        android:fontFamily="serif"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:fontFamily="serif"
+        android:maxLines="3"
+        android:layout_toRightOf="@id/img_poster"
+        android:text="@string/lorem_ipsum" />
+
+
+    <TextView
+        android:id="@+id/txt_date_released"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_location"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:fontFamily="serif"
+        android:maxLines="3"
+        android:layout_toRightOf="@id/img_poster"
+        android:text="@string/year" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_poster"
+        android:layout_marginTop="99dp"
+        android:layout_marginStart="26dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_repo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="@string/repo"  />
+
+            <TextView
+                android:id="@+id/teks1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:textColor="#3F51B5"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Repo"/>                                                                                                                                                                                                                                                                                                             "@string/year"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txt_following"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="@string/_12"/>
+
+            <TextView
+                android:id="@+id/teks2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:textColor="#3F51B5"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Following"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_followers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="@string/_56995"/>
+
+             <TextView
+                android:id="@+id/teks3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="10sp"
+                 android:textColor="#3F51B5"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Followers"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
